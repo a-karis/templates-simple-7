@@ -1,0 +1,10 @@
+parameters:
+  CinderEnableIscsiBackend: false
+  CinderEnableRbdBackend: true
+  CinderEnableNfsBackend: false
+  NovaEnableRbdBackend: true
+  GlanceBackend: rbd
+parameter_defaults:
+  ExtraConfig:
+    ceph::profile::params::osds:
+      '/dev/sdb': {}
